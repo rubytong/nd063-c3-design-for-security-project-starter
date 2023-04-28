@@ -1,13 +1,150 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+Snyk
 
 ### Example vulnerability
+https://snyk.io/security-rules/SNYK-CC-TF-95
+https://snyk.io/security-rules/SNYK-CC-TF-96
+https://snyk.io/security-rules/SNYK-CC-TF-98
+https://snyk.io/security-rules/SNYK-CC-TF-4
 
 ##Scan AMI’s or containers for OS vulnerabilities
+Amazon Inspector
 
 ### Example vulnerability
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, TCP port 20 which is associated with 'FTP' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, UDP port 21 which is associated with 'FTP' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, UDP port 20 which is associated with 'FTP' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, UDP port 23 which is associated with 'Telnet' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, TCP port 21 which is associated with 'FTP' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
+
+High
+Last Saturday at 4:43 PM (GMT+7) (6 days ago)
+On instance i-08e93d207632e3c5e, TCP port 23 which is associated with 'Telnet' is reachable from the internet
+Assessment-Target-All-Instances
+Assessment-Template-Default
+Network Reachability-1.1
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
-
+AWS Config
 ### Example vulnerability
+securityhub-alb-http-drop-invalid-header-enabled-2316ba33	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-alb-http-to-https-redirection-check-d8cf7e69	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-recommended-defaults-d5873c9d	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-ensure-expires-66f1f222	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-number-check-b51a9b3a	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-uppercase-letter-check-ab1e5cb2	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-support-policy-in-use-6f08985e	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-minimum-length-check-f9a30c3d	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-inline-policy-blocked-kms-actions-1bb15479	Not set	
+AWS managed
+
+DETECTIVE	 2 Noncompliant resource(s)
+
+securityhub-iam-password-policy-lowercase-letter-check-6c4f9b9d	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-password-policy-symbol-check-8b7ec5ee	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-multi-region-cloud-trail-enabled-c0efb5da	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-iam-policy-no-statements-with-full-access-8f304e71	Not set	
+AWS managed
+
+DETECTIVE	 4 Noncompliant resource(s)
+
+securityhub-nacl-no-unrestricted-ssh-rdp-62f68f07	Not set	
+AWS managed
+
+DETECTIVE	 2 Noncompliant resource(s)
+
+securityhub-iam-user-no-policies-check-c1aba552	Not set	
+AWS managed
+
+DETECTIVE	 2 Noncompliant resource(s)
+
+securityhub-iam-password-policy-prevent-reuse-check-51766dbe	Not set	
+AWS managed
+
+DETECTIVE	 1 Noncompliant resource(s)
+
+securityhub-encrypted-volumes-1aeb4bef	Not set	
+AWS managed
+
+DETECTIVE	 2 Noncompliant resource(s)
+
+securityhub-iam-customer-policy-blocked-kms-actions-83322710	Not set	
+AWS managed
+
+DETECTIVE	

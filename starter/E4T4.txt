@@ -1,8 +1,13 @@
 
 # What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
-
+- Update outbound rules for security group attached to ALB to only traffic from LB to desired destination
+- Use WAF infront of LB
+- Do not internet gateway route for private subnets, use NAT instance/NAT gateway to allow internet access from private subnets
 # Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
-
+- Sure
 # Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+- FROM AWS 
+"Amazon S3 now applies server-side encryption with Amazon S3 managed keys (SSE-S3) as the base level of encryption for every bucket in Amazon S3. Starting January 5, 2023, all new object uploads to Amazon S3 are automatically encrypted at no additional cost and with no impact on performance. The automatic encryption status for S3 bucket default encryption configuration and for new object uploads is available in AWS CloudTrail logs, S3 Inventory, S3 Storage Lens, the Amazon S3 console, and as an additional Amazon S3 API response header in the AWS Command Line Interface and AWS SDKs. For more information, "
 
 # What would happen if the original cloud formation templates are applied to this environment.
+Quite not clear about the question, please help clarify.

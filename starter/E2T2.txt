@@ -1,3 +1,10 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+No./Rule/Recommendation
+1/securityhub-encrypted-volumes-1aeb4bef/Enable Encryption for EBS volumes
+2/securityhub-vpc-sg-open-only-to-authorized-ports-fb4bf5b2/Not open ['0-65535', '22', '5000'] ports accesiblily from internet by removing corresponding rules in security groups attached to EC2 Instances
+3/securityhub-vpc-default-security-group-closed-c9ca3119/Default security group which opens all ports from internet not closed
+4/securityhub-restricted-ssh-b247ae96/Remove rule allowing internet access on port 22 in security groups detected
+5/securityhub-restricted-rdp-bb20e02b/Remove rule allowing internet access on port 3389 in security groups detected

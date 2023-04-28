@@ -1,5 +1,15 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Poor practice 1
+Web Service Instance allows internet access (0.0.0.0/0) to all ports through all protocols. It also has 3 rules to allow internet connection to specific ports:80,5000,22) via TCP protocol.
+Evidence:
+E1T4-Poor-Practice-1.png
 
 # Poor practice 2
+Web Service Instance attached public IP which it's possibly accessible from internet
+
+# Poor practice 3
+Instance profile attached to Web Service Instance allows to make all actions to all S3 buckets
+
+# Poor practice 4
+s3 secret recipes bucket is public access without bucket policy specification

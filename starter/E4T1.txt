@@ -1,5 +1,12 @@
 
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- Remove the rule which allows access to port 22 from internet in the security group attached to web app instance
+- Allow only access to port 22 from trusted ÍP in the security group attached to web app instance
+- Use Session Manager service to access to web app instance instead of SSH keys
+- Use WAF with corresponding rule
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+- Block public access to secret recipes bucket
+- Use VPC endpoint to make secure/private connection between web app instance and secret receipt s3 bucket
+- Add bucket policy to only allow access from specific roles/principals/resources
